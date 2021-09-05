@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D77629F26E3919C00602F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D77629E26E3919C00602F42 /* AppDelegate.swift */; };
+		8D7762A126E3919C00602F42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762A026E3919C00602F42 /* SceneDelegate.swift */; };
+		8D7762A826E391A300602F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7762A726E391A300602F42 /* Assets.xcassets */; };
+		8D7762AB26E391A300602F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7762A926E391A300602F42 /* LaunchScreen.storyboard */; };
+		8D7762B426E3951300602F42 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762B326E3951300602F42 /* Utilities.swift */; };
+		8D7762B726E395CE00602F42 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762B626E395CE00602F42 /* CalendarViewController.swift */; };
+		8D7762BB26E3964300602F42 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762BA26E3964300602F42 /* CalendarViewModel.swift */; };
+		8D7762BD26E397BB00602F42 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762BC26E397BB00602F42 /* TabBarViewController.swift */; };
+		8D7762C326E39B6600602F42 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762C226E39B6600602F42 /* HomeViewController.swift */; };
+		8D7762C526E39BB300602F42 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762C426E39BB300602F42 /* ClockViewController.swift */; };
+		8D7762C726E39BC700602F42 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762C626E39BC700602F42 /* ProfileViewController.swift */; };
+		8D7762C926E3A65600602F42 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762C826E3A65600602F42 /* TextFieldExtension.swift */; };
+		8D7762CB26E3AB5200602F42 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762CA26E3AB5200602F42 /* UIButtonExtension.swift */; };
+		8D7762CF26E3B16300602F42 /* OfficeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762CE26E3B16300602F42 /* OfficeCollectionCell.swift */; };
+		8D7762D426E3C01D00602F42 /* OfficeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762D326E3C01D00602F42 /* OfficeDetailViewController.swift */; };
+		8D7762D626E3D81100602F42 /* CardsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762D526E3D81100602F42 /* CardsCollectionCell.swift */; };
+		8D7762D826E4018000602F42 /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762D726E4018000602F42 /* LocationSearchViewController.swift */; };
+		8D7762DA26E402AA00602F42 /* LocationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762D926E402AA00602F42 /* LocationsListViewController.swift */; };
+		8D7762DD26E4070700602F42 /* LocationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7762DC26E4070700602F42 /* LocationTableCell.swift */; };
+		9DB3B490DCC5D4D6CBCCBFCE /* Pods_IMARTICUS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1B08AB9B45088E577C9B2A /* Pods_IMARTICUS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E1B8CBACF33D43FCAFE7CA6 /* Pods-IMARTICUS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMARTICUS.release.xcconfig"; path = "Target Support Files/Pods-IMARTICUS/Pods-IMARTICUS.release.xcconfig"; sourceTree = "<group>"; };
+		7F1B08AB9B45088E577C9B2A /* Pods_IMARTICUS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMARTICUS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D77629B26E3919C00602F42 /* IMARTICUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMARTICUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D77629E26E3919C00602F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D7762A026E3919C00602F42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8D7762A726E391A300602F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D7762AA26E391A300602F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D7762AC26E391A300602F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D7762B326E3951300602F42 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		8D7762B626E395CE00602F42 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		8D7762BA26E3964300602F42 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		8D7762BC26E397BB00602F42 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8D7762C226E39B6600602F42 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8D7762C426E39BB300602F42 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		8D7762C626E39BC700602F42 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8D7762C826E3A65600602F42 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		8D7762CA26E3AB5200602F42 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		8D7762CE26E3B16300602F42 /* OfficeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeCollectionCell.swift; sourceTree = "<group>"; };
+		8D7762D326E3C01D00602F42 /* OfficeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeDetailViewController.swift; sourceTree = "<group>"; };
+		8D7762D526E3D81100602F42 /* CardsCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionCell.swift; sourceTree = "<group>"; };
+		8D7762D726E4018000602F42 /* LocationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
+		8D7762D926E402AA00602F42 /* LocationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListViewController.swift; sourceTree = "<group>"; };
+		8D7762DC26E4070700602F42 /* LocationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableCell.swift; sourceTree = "<group>"; };
+		EFEABAC677AEC902E971C065 /* Pods-IMARTICUS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMARTICUS.debug.xcconfig"; path = "Target Support Files/Pods-IMARTICUS/Pods-IMARTICUS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D77629826E3919C00602F42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB3B490DCC5D4D6CBCCBFCE /* Pods_IMARTICUS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CBEDCB5D31E84970D56BB37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F1B08AB9B45088E577C9B2A /* Pods_IMARTICUS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		528AEB2857228674D384CCB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFEABAC677AEC902E971C065 /* Pods-IMARTICUS.debug.xcconfig */,
+				5E1B8CBACF33D43FCAFE7CA6 /* Pods-IMARTICUS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D77629226E3919B00602F42 = {
+			isa = PBXGroup;
+			children = (
+				8D77629D26E3919C00602F42 /* IMARTICUS */,
+				8D77629C26E3919C00602F42 /* Products */,
+				528AEB2857228674D384CCB5 /* Pods */,
+				4CBEDCB5D31E84970D56BB37 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D77629C26E3919C00602F42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D77629B26E3919C00602F42 /* IMARTICUS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D77629D26E3919C00602F42 /* IMARTICUS */ = {
+			isa = PBXGroup;
+			children = (
+				8D77629E26E3919C00602F42 /* AppDelegate.swift */,
+				8D7762A026E3919C00602F42 /* SceneDelegate.swift */,
+				8D7762BE26E397CD00602F42 /* TabBar */,
+				8D7762BF26E39B1E00602F42 /* Home */,
+				8D7762B526E3952A00602F42 /* Calender */,
+				8D7762C026E39B2800602F42 /* Clock */,
+				8D7762C126E39B2D00602F42 /* Profile */,
+				8D7762B226E3950300602F42 /* Utils */,
+				8D7762A726E391A300602F42 /* Assets.xcassets */,
+				8D7762A926E391A300602F42 /* LaunchScreen.storyboard */,
+				8D7762AC26E391A300602F42 /* Info.plist */,
+			);
+			path = IMARTICUS;
+			sourceTree = "<group>";
+		};
+		8D7762B226E3950300602F42 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762B326E3951300602F42 /* Utilities.swift */,
+				8D7762CA26E3AB5200602F42 /* UIButtonExtension.swift */,
+				8D7762C826E3A65600602F42 /* TextFieldExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8D7762B526E3952A00602F42 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762CC26E3B13D00602F42 /* Views */,
+				8D7762B926E3963000602F42 /* ViewModel */,
+				8D7762B826E3962B00602F42 /* Controllers */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		8D7762B826E3962B00602F42 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762B626E395CE00602F42 /* CalendarViewController.swift */,
+				8D7762D326E3C01D00602F42 /* OfficeDetailViewController.swift */,
+				8D7762D726E4018000602F42 /* LocationSearchViewController.swift */,
+				8D7762D926E402AA00602F42 /* LocationsListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8D7762B926E3963000602F42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762BA26E3964300602F42 /* CalendarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D7762BE26E397CD00602F42 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762BC26E397BB00602F42 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		8D7762BF26E39B1E00602F42 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762C226E39B6600602F42 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8D7762C026E39B2800602F42 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762C426E39BB300602F42 /* ClockViewController.swift */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		8D7762C126E39B2D00602F42 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762C626E39BC700602F42 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8D7762CC26E3B13D00602F42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762DB26E406F200602F42 /* TableViewCells */,
+				8D7762CD26E3B14300602F42 /* CollectionViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D7762CD26E3B14300602F42 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762CE26E3B16300602F42 /* OfficeCollectionCell.swift */,
+				8D7762D526E3D81100602F42 /* CardsCollectionCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		8D7762DB26E406F200602F42 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8D7762DC26E4070700602F42 /* LocationTableCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D77629A26E3919C00602F42 /* IMARTICUS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D7762AF26E391A300602F42 /* Build configuration list for PBXNativeTarget "IMARTICUS" */;
+			buildPhases = (
+				020B8D30B6AE928AE90C4FA6 /* [CP] Check Pods Manifest.lock */,
+				8D77629726E3919C00602F42 /* Sources */,
+				8D77629826E3919C00602F42 /* Frameworks */,
+				8D77629926E3919C00602F42 /* Resources */,
+				ABC6E302C527E7F9EA0C5EDC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMARTICUS;
+			productName = IMARTICUS;
+			productReference = 8D77629B26E3919C00602F42 /* IMARTICUS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D77629326E3919B00602F42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8D77629A26E3919C00602F42 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 8D77629626E3919B00602F42 /* Build configuration list for PBXProject "IMARTICUS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D77629226E3919B00602F42;
+			productRefGroup = 8D77629C26E3919C00602F42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D77629A26E3919C00602F42 /* IMARTICUS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D77629926E3919C00602F42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7762AB26E391A300602F42 /* LaunchScreen.storyboard in Resources */,
+				8D7762A826E391A300602F42 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		020B8D30B6AE928AE90C4FA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMARTICUS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABC6E302C527E7F9EA0C5EDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMARTICUS/Pods-IMARTICUS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMARTICUS/Pods-IMARTICUS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IMARTICUS/Pods-IMARTICUS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D77629726E3919C00602F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7762B426E3951300602F42 /* Utilities.swift in Sources */,
+				8D7762CB26E3AB5200602F42 /* UIButtonExtension.swift in Sources */,
+				8D77629F26E3919C00602F42 /* AppDelegate.swift in Sources */,
+				8D7762D626E3D81100602F42 /* CardsCollectionCell.swift in Sources */,
+				8D7762A126E3919C00602F42 /* SceneDelegate.swift in Sources */,
+				8D7762D426E3C01D00602F42 /* OfficeDetailViewController.swift in Sources */,
+				8D7762C926E3A65600602F42 /* TextFieldExtension.swift in Sources */,
+				8D7762DD26E4070700602F42 /* LocationTableCell.swift in Sources */,
+				8D7762D826E4018000602F42 /* LocationSearchViewController.swift in Sources */,
+				8D7762CF26E3B16300602F42 /* OfficeCollectionCell.swift in Sources */,
+				8D7762DA26E402AA00602F42 /* LocationsListViewController.swift in Sources */,
+				8D7762BB26E3964300602F42 /* CalendarViewModel.swift in Sources */,
+				8D7762BD26E397BB00602F42 /* TabBarViewController.swift in Sources */,
+				8D7762C326E39B6600602F42 /* HomeViewController.swift in Sources */,
+				8D7762C726E39BC700602F42 /* ProfileViewController.swift in Sources */,
+				8D7762B726E395CE00602F42 /* CalendarViewController.swift in Sources */,
+				8D7762C526E39BB300602F42 /* ClockViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D7762A926E391A300602F42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D7762AA26E391A300602F42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D7762AD26E391A300602F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D7762AE26E391A300602F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D7762B026E391A300602F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFEABAC677AEC902E971C065 /* Pods-IMARTICUS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXP5B2S6V8;
+				INFOPLIST_FILE = IMARTICUS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahuja.IMARTICUS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D7762B126E391A300602F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1B8CBACF33D43FCAFE7CA6 /* Pods-IMARTICUS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JXP5B2S6V8;
+				INFOPLIST_FILE = IMARTICUS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahuja.IMARTICUS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D77629626E3919B00602F42 /* Build configuration list for PBXProject "IMARTICUS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D7762AD26E391A300602F42 /* Debug */,
+				8D7762AE26E391A300602F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D7762AF26E391A300602F42 /* Build configuration list for PBXNativeTarget "IMARTICUS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D7762B026E391A300602F42 /* Debug */,
+				8D7762B126E391A300602F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D77629326E3919B00602F42 /* Project object */;
+}
